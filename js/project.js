@@ -1,3 +1,4 @@
+// Create a function to toggle the visibility of the project cards based on the selected filter
 const buttons = document.querySelectorAll('.filter button');
 const cards = document.querySelectorAll('.project-container>div');
 

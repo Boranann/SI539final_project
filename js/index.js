@@ -1,3 +1,4 @@
+// Implement the functionality to display a random sentence from the array when the image is clicked
 const sentences = [
     "Hi there!",
     "How are you?",
@@ -8,7 +9,7 @@ const sentences = [
     "Stay positive!",
   ];
 
-const image = document.getElementById("image");
+const image = document.querySelector(".portfolio-image");
 const textContainer = document.getElementById("text-container");
 
 image.addEventListener("click", (event) => {
