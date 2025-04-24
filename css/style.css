@@ -111,6 +111,7 @@ header {
 /* hamburger view */
 #hamburger {
     background: none;
+    margin: 0;
     border: none;
     cursor: pointer;
     display: block;
@@ -126,6 +127,7 @@ header {
     max-width: 800px;
     text-align: right;
     transition: all 0.3s ease-in-out;
+    z-index: 1000;
 }
 
 #navMenu.show {
@@ -137,7 +139,7 @@ header {
     list-style: none;
     gap: 6vw;
     flex-direction: column;
-    padding: 0vw 4vw 4vw 4vw;
+    padding: 0vw 7vw 4vw 4vw;
     margin: 0;
 }
 
@@ -180,11 +182,6 @@ header p {
     color: #5D6DC6;
     border: 2px solid #5D6DC6;
     border-radius: 20px;
-}
-
-.view-button:hover {
-    background-color: #5D6DC6;
-    color: white;
 }
 
 /* header end */
@@ -252,14 +249,11 @@ button {
     margin: 0 2vw 1.5vh 0;
     width: fit-content;
     color: #000000;
+    background-color: #ffffff;
     border: 2px solid #5D6DC6;
     border-radius: 20px;
     font-family: 'DM Sans', sans-serif;
-}
-
-.filter button:hover {
-    background-color: #5D6DC6;
-    color: white;
+    font-size: 1em;
 }
 
 .filter button.active {
@@ -288,13 +282,13 @@ button {
 }
 
 #main2 h2 {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
     margin: 1.5vh 0;
 }
 
 #main2 div p {
-    font-size: 0.8em;
+    font-size: 1em;
     margin: 1vh 0;
 }
 
@@ -306,7 +300,8 @@ button {
 }
 
 #main3 p{
-    text-decoration: underline solid #5D6DC6;
+    text-decoration: underline solid 2px #5D6DC6;
+    text-underline-offset: 4px;
 }
 
 .organization {
@@ -343,6 +338,50 @@ figcaption {
     text-align: right;
 }
 
+/* Page4 starts */
+
+#text-container {
+    position: relative;
+    left: 60%;
+    color:#5D6DC6;
+    border: 2px solid #5D6DC6;
+    background-color: #fff;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 2vw;
+    max-width: 40vw;
+}
+
+#text-container p {
+    text-indent: 0;
+    overflow-wrap: break-word;
+}
+
+#portfolio-image {
+    margin-top: 0;
+    cursor: pointer;
+}
+
+#main4 h2{
+    font-size: 2em;
+    font-weight: 900;
+    color:#5D6DC6;
+}
+
+#main4 img{
+    width:100%;
+    border-radius: 20px;
+    margin-top: 3vh;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+    margin-bottom: 5vh;
+}
+
+
 /* Footer starts */
 
 footer {
@@ -374,6 +413,7 @@ footer>p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1.5vh;
 }
 
 .social-media {
@@ -394,6 +434,12 @@ footer>p{
 }
 
 /* Footer ends */
+
+/* Interactive styling*/
+.skip a:hover, .filter button:hover,.view-button:hover {
+    background-color: #5D6DC6;
+    color: white;
+}
 
 @media (min-width: 768px) {
     #hamburger {

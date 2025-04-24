@@ -2,11 +2,16 @@
 const sentences = [
     "Hi there!",
     "How are you?",
-    "Welcome to my website!",
-    "Have a great day!",
+    "I'm Boran!",
+    "Let's connect!",
     "Keep smiling!",
-    "Believe in yourself!",
     "Stay positive!",
+    "You are amazing!",
+    "Never give up!",
+    "Dream big!",
+    "Make it happen!",
+    "Stay focused!",
+    "You got this!",
   ];
 
 const image = document.querySelector(".portfolio-image");
